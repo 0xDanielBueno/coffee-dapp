@@ -1,4 +1,3 @@
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import React, { JSX } from "react";
 import "./globals.css";
 
@@ -13,10 +12,7 @@ const RootLayout: React.FC<RootLayoutProps> = ({ children }): JSX.Element => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Coffee DApp</title>
       </head>
-      <body>
-        {children}
-        <SpeedInsights />
-      </body>
+      <body>{children}</body>
     </html>
   );
 };
